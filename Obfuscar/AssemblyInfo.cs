@@ -639,7 +639,8 @@ namespace Obfuscar
                     {
                         ReadingMode = ReadingMode.Deferred,
                         ReadSymbols = readSymbols,
-                        AssemblyResolver = project.Cache
+                        AssemblyResolver = project.Cache,
+                        InMemory = true
                     });
                 }
                 catch
@@ -651,7 +652,8 @@ namespace Obfuscar
                     {
                         ReadingMode = ReadingMode.Deferred,
                         ReadSymbols = false,
-                        AssemblyResolver = project.Cache
+                        AssemblyResolver = project.Cache,
+                        InMemory = true
                     });
                 }
 
@@ -664,7 +666,8 @@ namespace Obfuscar
                     {
                         ReadingMode = ReadingMode.Immediate,
                         ReadSymbols = readSymbols,
-                        AssemblyResolver = project.Cache
+                        AssemblyResolver = project.Cache,
+                        InMemory = true
                     });
                 }
                 catch
@@ -676,7 +679,8 @@ namespace Obfuscar
                     {
                         ReadingMode = ReadingMode.Immediate,
                         ReadSymbols = false,
-                        AssemblyResolver = project.Cache
+                        AssemblyResolver = project.Cache,
+                        InMemory = true
                     });
                 }
 
